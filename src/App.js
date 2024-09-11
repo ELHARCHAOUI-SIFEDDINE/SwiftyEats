@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import { createBrowserRouter, RouterProvider, Outlet, createHashRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; // updated import
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/contacUs";
 import Error from "./components/Error";
@@ -25,7 +25,8 @@ const AppLayout = () => {
   );
 };
 
-const appRouter = createHashRouter([
+// Replacing createHashRouter with createBrowserRouter
+const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
@@ -51,7 +52,7 @@ const appRouter = createHashRouter([
         element: <Cart />,
       },
       {
-        path: "/restaurant/:resId", //: - used for dynamic routing (resId is a param which differentiates the restaurants)
+        path: "/restaurant/:resId", // dynamic routing
         element: <RestaurantMenu />,
       },
     ],
