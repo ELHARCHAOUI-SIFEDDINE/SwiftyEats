@@ -1,8 +1,9 @@
 {
   "name": "food-app",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "homepage": "https://ELHARCHAOUI-SIFEDDINE.github.io/SwiftyEats",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "framer-motion": "^11.5.4",
