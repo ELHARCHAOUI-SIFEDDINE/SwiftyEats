@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+.pnp
+.pnp.js
+
+# Build directories
+dist/
+dist-ssr/
+.parcel-cache/
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+.ntvs/
+*.njsproj
+*.sln
+*.sw?
+
+# Local environment files
+*.local
+.env
+.env.*.local
+
+# Misc
+coverage/
+lib-cov/
+*.lcov
+.jest/
+.nyc_output/
+
+# Ignore package-lock.json to avoid version conflicts
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
